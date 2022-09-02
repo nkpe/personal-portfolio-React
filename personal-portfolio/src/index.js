@@ -2,9 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import './index.css';
-import App from './App';
-import { Home }from '../src/components/pages/home/Home';
 import reportWebVitals from './reportWebVitals';
+
+import App from './App';
+import { Home } from '../src/components/pages/home/Home';
+import { AboutPage } from './components/pages/about/About';
+import { Contact } from './components/pages/contact/Contact';
+import { CodingPortfolio } from './components/pages/portfolio/coding-projects/CodingPortfolio';
+import { DesignPortfolio } from './components/pages/portfolio/design-projects/DesignPortfolio';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +18,10 @@ root.render(
       <Routes>
         <Route exact path="/" element={<App />}>
           <Route path="home" element={<Home />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="contact" element={<Contact />} />
+          <Route exact path="portfolio/coding" element={<CodingPortfolio />} />
+          <Route exact path="portfolio/design" element={<DesignPortfolio />} />
           <Route path="" element={<Home />} />
         </Route>
       </Routes>

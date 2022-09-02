@@ -1,0 +1,53 @@
+.portf-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.portf-section .portf-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.portf-section .portf-row .project-container {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: calc(50% - 20px);
+    min-width: 300px;
+}
+
+.portf-section .portf-row .project-container .portf-proj-img {
+    display: inline-block;
+    height: 70%;
+    overflow: hidden;
+    width: 100%;    
+
+}
+
+.portf-section .portf-row .project-container .portf-proj-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.portf-section .portf-row .project-container .project-text {
+    display: inline-flex;
+}
+
+.portf-section .portf-row .project-container .project-link-list {
+    margin: 0;
+    padding: 0;
+}
+
+.portf-section .portf-row .project-container .project-link-list li {
+    list-style-type: none;
+}
