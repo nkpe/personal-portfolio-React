@@ -1,0 +1,57 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    width: 100%;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+header .logo-home {
+    height: 90%
+}
+
+header .logo-home img {
+    height: 100%;
+    width: auto;
+}
+
+header nav {
+    display: flex;
+    column-gap: 10px;
+    width: fit-content;
+}
+
+header nav a , #portfolio-dropdown a {
+    display: inline;
+    list-style-type: none;
+}
+
+header nav a:hover , #portfolio-dropdown a:hover {
+    font-weight: bold;
+}
+
+#portfolio-dropdown {
+    position: absolute; 
+    flex-direction: column;
+    align-items: center;
+    z-index: 99;
+    row-gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #7DBECA;
+    transform: translateX(-12.5px);
+    border-left: white 2px solid;
+    border-right: white 2px solid;
+    border-top: none;
+}
+
+#nav-projects:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
