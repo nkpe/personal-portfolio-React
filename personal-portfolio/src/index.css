@@ -6,8 +6,9 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Dancing Script', sans-serif;
+  font-family: 'Manrope', sans-serif;
   height: 100vh;
+  letter-spacing: 2.5px;
 }
 
 body * {

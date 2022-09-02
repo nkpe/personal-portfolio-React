@@ -1,3 +1,4 @@
+/* Header */
 header {
     display: flex;
     align-items: center;
@@ -19,6 +20,7 @@ header .logo-home img {
     width: auto;
 }
 
+/* NavBar */
 header nav {
     display: flex;
     column-gap: 10px;
@@ -54,4 +56,17 @@ header nav a:hover , #portfolio-dropdown a:hover {
 #nav-projects:hover {
     cursor: pointer;
     font-weight: bold;
+}
+
+
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 90px;
+    bottom: 0;
+    padding: 10px;
 }

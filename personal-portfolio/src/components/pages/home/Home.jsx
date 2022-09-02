@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import profilePicture from '../../../images/me.jpg';
 
 export function Home () {
     return (
@@ -8,7 +9,7 @@ export function Home () {
                 <div id="wel-home-bkgrnd">
                     <h1>welcome to my portfolio</h1>
                     <div id="img-home-container">
-                        <img src="dist/imgs/me.jpg" alt="Portrait of Naomi Pearse" />
+                        <img src={profilePicture} alt="Naomi Pearse" />
                     </div>
                 </div>
             </div>

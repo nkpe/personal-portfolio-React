@@ -1,0 +1,23 @@
+.social-contact {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    column-gap: 25px !important;
+}
+
+.social-contact a i:hover {
+    font-size: 45px;
+}
+
+.social {
+    display: flex;
+ }
+ 
+.social .fa-brands {
+     font-size: 40px;
+ }
+
+ .social-footer {
+    column-gap: 10px
+ }
