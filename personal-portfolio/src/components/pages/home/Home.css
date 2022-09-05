@@ -56,3 +56,21 @@
     right: 0px;
     z-index: 0;
 }
+
+@media screen and (max-width: 700px) {
+    #home-pg-main #aside-left #wel-home-bkgrnd {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-content: space-around;
+        height: 65%;
+    }
+
+    #home-pg-main #aside-left #img-home-container {
+        max-height: 260px;
+        height: 94%;
+    }
+
+    #home-pg-main #aside-left #wel-home-bkgrnd h1{
+        font-size: 2rem;
+    }
+}

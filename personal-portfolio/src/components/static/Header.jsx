@@ -6,7 +6,7 @@ export function Header() {
     return (
     <header>
         <NavBar />
-        <a class="logo-home" href="index.html">
+        <a className="logo-home" href="index.html">
             <img src={logo} alt="Logo for Naomi Pearse" />
         </a>
     </header>

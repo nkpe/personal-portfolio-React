@@ -4,49 +4,48 @@ import "./Contact.css";
 
 export function Contact() {
     return (
-        <section id="contact-pg" class="long-page">
+        <section id="contact-pg" className="long-page">
             <div id="contact-form-container">
                 <h1>contact me</h1>
                 <SocialMedia />
                 <form id="contact-form" action="https://formspree.io/f/mwkyypvq" method="POST">
-                    <div class="form-flex-child">
-                        <div class="form-item">
+                    <div className="form-flex-child">
+                        <div className="form-item">
                             <label for="first-name-input" form="contact-form">First Name *</label>
-                            <input class="input-style" type="text" id="first-name-input" name="first-name" placeholder="First Name"
+                            <input className="input-style" type="text" id="first-name-input" name="first-name" placeholder="First Name"
                                 minlength="2" required />
                         </div>
-                        <div class="form-item">
+                        <div className="form-item">
                             <label for="surname-input" form="contact-form">Surname *</label>
-                            <input class="input-style" type="text" id="surname-input" name="surname" placeholder="Surname" min="2" required />
+                            <input className="input-style" type="text" id="surname-input" name="surname" placeholder="Surname" min="2" required />
                         </div>
                     </div>
 
-                    <div class="form-flex-child">
-                        <div class="form-item">
+                    <div className="form-flex-child">
+                        <div className="form-item">
                             <label for="email-input" form="contact-form">Email *</label>
-                            <input class="input-style" type="text" id="email-input" name="email" placeholder="Email" min="2" required />
+                            <input className="input-style" type="text" id="email-input" name="email" placeholder="Email" min="2" required />
                         </div>
-                        <div class="form-item">
+                        <div className="form-item">
                             <label for="tele-input" form="contact-form">Telephone Number</label>
-                            <input class="input-style" type="text" id="tele-input" placeholder="Telephone" min="5" />
+                            <input className="input-style" type="text" id="tele-input" placeholder="Telephone" min="5" />
                         </div>
                     </div>
 
-                    <div class="form-flex-child">
-                        <div class="form-item">
+                    <div className="form-flex-child">
+                        <div className="form-item">
                             <label for="contact-pref-select" form="contact-form">Contact me by</label>
-                            <select class="input-style" id="contact-pref-select" name="contact-pref">
-                                <option value="" disabled selected hidden class="option-selected">Preference</option>
+                            <select className="input-style" id="contact-pref-select" name="contact-pref">
+                                <option value="" disabled selected hidden className="option-selected">Preference</option>
                                 <option value="telephone">Telephone</option>
                                 <option value="email">Email</option>
                                 <option value="facebook">Facebook</option>
                                 <option value="whatsapp">Whatsapp</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="form-item">
-                        <label for="country-select" form="contact-form">Country</label>
-                        <input class="input-style" id="country-list" list="countries" name="country" autocomplete="off" placeholder="Country" />
+                        <div className="form-item">
+                            <label for="country-select" form="contact-form">Country</label>
+                            <input className="input-style" id="country-list" list="countries" name="country" autocomplete="off" placeholder="Country" />
                             <datalist id="countries" name="country-list">
                                 <option value="Afghanistan">Afghanistan</option>
                                 <option value="Albania">Albania</option>
@@ -249,22 +248,20 @@ export function Contact() {
                                 <option value="Zambia">Zambia</option>
                                 <option value="Zimbabwe">Zimbabwe</option>
                             </datalist>
+                        </div>
+                    </div>
+                    <div className="form-flex-child">
+                        <div className="form-item-span">
+                            <label for="message-area" form="contact-form">Message</label>
+                            <textarea id="message-area" name="message" placeholder="I'd love to hear from you!"
+                                required></textarea>
+                        </div>
+                    </div>
+                    <div className="form-flex-child">
+                        <button className="form-item-span" id="submit-contact-form" type="submit" name="submit-contact-form" value="Submit" form="contact-form">Submit</button>
                     </div>
                 </form>
             </div>
-
-            <div class="form-flex-child">
-                <div class="form-item-span">
-                    <label for="message-area" form="contact-form">Message</label>
-                    <textarea id="message-area" name="message" value="text" placeholder="I'd love to hear from you!"
-                        required></textarea>
-                </div>
-
-            </div>
-            <div class="form-flex-child">
-                <button class="form-item-span"
-                    id="submit-contact-form" type="submit" name="submit-contact-form" value="Submit" form="contact-form">Submit</button>
-            </div >
-        </section >
+        </section>
     )
 }

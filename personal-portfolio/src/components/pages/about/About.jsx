@@ -3,7 +3,7 @@ import "./About.css";
 
 function AboutSection() {
     return (
-        <section id="about-me" class="bio-blocks">
+        <section id="about-me" className="bio-blocks">
             <h1 id="h1-about">about</h1>
             <p id="p-about">A creative, logical thinker with a passion for stunning web designs and user interfaces. <br />
                 I have a 2:1 in MDes Interior Design from Coventry University.
@@ -14,7 +14,7 @@ function AboutSection() {
 
 function AboutBio() {
     return (
-        <section id="bio-background" class="bio-blocks shadow-left">
+        <section id="bio-background" className="bio-blocks shadow-left">
             <h1 id="h1-bkgd">skills</h1>
             <p id="p-bkgd">
                 <ul>
@@ -30,7 +30,7 @@ function AboutBio() {
 
 function AboutPresent() {
     return (
-        <section id="bio-present" class="bio-blocks shadow-right">
+        <section id="bio-present" className="bio-blocks shadow-right">
             <h1 id="h1-present">at present</h1>
             <p d="p-present">Currently studying Full Stack Web Development having been working in the design
                 industry for 3 and half years. </p>
@@ -40,7 +40,7 @@ function AboutPresent() {
 
 function AboutInterests() {
     return (
-        <section id="bio-interests" class="bio-blocks shadow-left">
+        <section id="bio-interests" className="bio-blocks shadow-left">
             <h1 id="h1-interests">interests</h1>
             <p id="p-interests">Hobbies include rock climbing, cross stitching and hiking.</p>
         </section>
@@ -49,7 +49,7 @@ function AboutInterests() {
 
 export function AboutPage() {
     return (
-        <section id="bio-page" class="long-page">
+        <section id="bio-page" className="long-page">
             <AboutSection />
             <AboutBio />
             <AboutPresent />

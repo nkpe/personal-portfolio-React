@@ -4,7 +4,7 @@ import profilePicture from '../../../images/me.jpg';
 
 export function Home () {
     return (
-        <section id="home-pg-main" class="vh">
+        <section id="home-pg-main" className="vh">
             <div id="aside-left">
                 <div id="wel-home-bkgrnd">
                     <h1>welcome to my portfolio</h1>

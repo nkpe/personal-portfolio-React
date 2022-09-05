@@ -1,52 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 
+function NavBarDropDown({display, handleCallback}) {
+
+    return (
+        <div id="portfolio-dropdown" style={{display: display}}>
+            <Link to="portfolio/coding" onClick={handleCallback}>coding</Link>
+            <Link to="portfolio/design" onClick={handleCallback}>design</Link>
+        </div>
+    )
+}
+
 export function NavBar() {
-    // const portfolioDropdown = document.getElementById("portfolio-dropdown");
+    const [display, setDisplay] = useState("none");
 
-    // const dropdownLinks = document.querySelectorAll("#portfolio-dropdown > *");
-    // const navProjects = document.getElementById("nav-projects");
-    // const portfolioSections = document.getElementById("portf-section");
-    // const codeProjects = document.getElementById("portf-code");
-    // const designProjects = document.getElementById("portf-design");
-
-    // let dropdownState = null;
-
-    // let onLoad = () => {
-    //     portfolioDropdown.style.display = "none";
-    //     dropdownState = false
-    // };
-
-    // onLoad();
-
-    // let navDropdownShow = (e) => {
-    //     if (dropdownState === false) {
-    //         console.log(dropdownState);
-    //         portfolioDropdown.style.display = "flex";
-    //         dropdownState = true;
-    //         console.log(dropdownState);
-    //     } else {
-    //         portfolioDropdown.style.display = "none";
-    //         dropdownState = false;
-    //     }
-    // };
-
-    // navProjects.addEventListener('click', navDropdownShow);
+    const handleDropdownToggle = () => {
+       display==="none" ? setDisplay("inline-flex") : setDisplay("none")
+    };
+    
+    const handleCallback = () => {
+        this.setDisplay("none");
+    }
 
     return (
         <nav>
             <Link to="home">home</Link>
-            <div class="nav-spacer">|</div>
+            <div className="nav-spacer">|</div>
             <Link to="about">about</Link>
-            <div class="nav-spacer">|</div>
+            <div className="nav-spacer">|</div>
             <div id="projects-link">
-                <div id="nav-projects">projects</div>
-                <div id="portfolio-dropdown">
-                    <Link to="portfolio/coding">coding</Link>
-                    <Link to="portfolio/design">design</Link>
-                </div>
+                <div id="nav-projects" onClick={handleDropdownToggle}>projects</div>
+                <NavBarDropDown display={display} handleCallback={handleCallback}/>
             </div>
-            <div class="nav-spacer">|</div>
+            <div className="nav-spacer">|</div>
             <Link to="contact" name="contact-me">contact</Link>
         </nav>
     )

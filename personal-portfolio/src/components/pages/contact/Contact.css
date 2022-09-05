@@ -79,3 +79,19 @@
     border-style: solid;
     font-weight: 700;
 }
+
+
+/* CONTACT PAGE */
+@media screen and (max-width: 427px) {
+    #contact-pg {
+        min-height: 700px !important;
+    }
+
+    #contact-pg #contact-form .form-item-span {
+        width: 200px;
+    }
+
+    #contact-form-container #contact-form .form-flex-child .form-item {
+        width: 100%;
+    }
+}
