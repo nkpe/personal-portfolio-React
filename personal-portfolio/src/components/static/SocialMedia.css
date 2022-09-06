@@ -1,4 +1,4 @@
-.social-contact {
+.social {
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -6,7 +6,7 @@
     column-gap: 25px !important;
 }
 
-.social-contact a i:hover {
+.social a i:hover {
     font-size: 45px;
 }
 
@@ -16,8 +16,4 @@
  
 .social .fa-brands {
      font-size: 40px;
- }
-
- .social-footer {
-    column-gap: 10px
  }
