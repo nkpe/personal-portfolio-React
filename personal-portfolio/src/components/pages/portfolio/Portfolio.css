@@ -21,13 +21,14 @@
     display: inline-flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    height: 70%;
     width: calc(50% - 20px);
     min-width: 300px;
 }
 
 .portf-section .portf-row .project-container .portf-proj-img {
     display: inline-block;
-    height: 70%;
+    height: 100%;
     overflow: hidden;
     width: 100%;    
 

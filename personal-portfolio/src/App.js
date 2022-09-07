@@ -1,4 +1,4 @@
-
+import React from 'react';
 import './App.css';
 import '../src/components/static/Static.css';
 import { Header } from './components/static/Header';

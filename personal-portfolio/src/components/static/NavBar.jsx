@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 
-function NavBarDropDown({display, handleCallback}) {
+function NavBarSm (){
+    return (
+        <div>Nav</div>
+    )
+}
 
+function NavBarDropDown({display, handleCallback}) {
     return (
         <div id="portfolio-dropdown" style={{display: display}}>
             <Link to="portfolio/coding" onClick={handleCallback}>coding</Link>
