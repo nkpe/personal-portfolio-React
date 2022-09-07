@@ -10,10 +10,10 @@ import engineeringRecepImg from "../../../../images/design-projects/pailtonengin
 function DesignPortfolioProjects({ projectImg, projectImgAlt, projectName, projectText, projectPage }) {
     return (
         <div className="project-container">
-            <a className="portf-proj-link portf-proj-img" target="_blank">
+            <a className="project-link project-img" target="_blank">
                 <img src={projectImg} alt={projectImgAlt} />
             </a>
-            <div className="portf-text">
+            <div className="project-text">
                 <h2>{projectName}</h2>
                 <p>{parse(projectText)}</p>
                 {/* <div className="project-link-list">
@@ -26,9 +26,9 @@ function DesignPortfolioProjects({ projectImg, projectImgAlt, projectName, proje
 
 export function DesignPortfolio() {
     return (
-        <section className="portf-section" id="portf-design">
+        <section className="project-section" id="projects-design">
             <h1>design portfolio</h1>
-            <div className="portf-row">
+            <div className="project-row">
                 <DesignPortfolioProjects
                     projectImg={studioApartmentImg} projectImgAlt="Studio Apartment Render"
                     projectName="Studio Apartment" projectText="A luxury miniature studio apartment sits inside a converted office block. The apartment may be small at only 25.9 metres square, however it still contains all the essentials for living, including an en-suite, whilst maximising space. <br />
@@ -43,7 +43,7 @@ export function DesignPortfolio() {
                     projectPage="/" />
             </div>
 
-            <div className="portf-row">
+            <div className="project-row">
 
                 <DesignPortfolioProjects
                     projectImg={standingImg} projectImgAlt="Exhibition Stand Render"
