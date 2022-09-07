@@ -9,18 +9,18 @@ import athenaHack22 from "../../../../images/coding-projects/athena-hack-circula
 function CodingPortfolioProjects ({ projectImg, projectImgAlt, projectName, projectText, projectHostLink, hostLinkType, projectSourceLink }) {
     return (
         <div className="project-container">
-            <a className="project-link project-img" target="_blank">
+            <a className="project-link project-img" target="_blank" rel="noopener noreferrer">
                 <img src={projectImg} alt={projectImgAlt} />
             </a>
             <div className="project-text">
                 <h2>{projectName}</h2>
                 <p>{parse(projectText)}</p>
-                <ul className="project-link-list">
-                    <li><a className="project-link" href={projectHostLink}
-                        target="_blank">{hostLinkType}</a>
-                    </li>
-                    <a className="project-link" href={projectSourceLink} target="_blank">Source Code</a>
-                </ul>
+                <div className="project-link-list">
+                    <a className="project-link" href={projectHostLink}
+                        target="_blank" rel="noopener noreferrer">{hostLinkType} </a>
+                    
+                    <a className="project-link" href={projectSourceLink} target="_blank" rel="noopener noreferrer">Source Code</a>
+                </div>
             </div>
         </div>
     )

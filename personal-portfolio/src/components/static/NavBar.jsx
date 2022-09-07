@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
 import { Link } from 'react-router-dom';
-
+// less than 500px - NavBarSm
 function NavBarSm (){
     return (
-        <div>Nav</div>
+        <div id="nav-sm"><i class="fa-solid fa-ellipsis"></i></div>
     )
 }
 
@@ -16,7 +17,7 @@ function NavBarDropDown({display, handleCallback}) {
     )
 }
 
-export function NavBar() {
+function NavBar() {
     const [display, setDisplay] = useState("none");
 
     const handleDropdownToggle = () => {
@@ -40,5 +41,36 @@ export function NavBar() {
             <div className="nav-spacer">|</div>
             <Link to="contact" name="contact-me">contact</Link>
         </nav>
+    )
+}
+
+export function ResponsiveNav () {
+    const [dimensions, setDimensions] = useState({
+        width: window.innerWidth
+    })
+
+    useEffect(() => {
+        function handleResize() {
+            setDimensions({
+                width: window.innerWidth
+            })
+        }
+
+        window.addEventListener('resize', handleResize);
+        return _ => {
+            window.removeEventListener('resize', handleResize)
+        }
+
+    })
+
+    return (
+       <>
+            {dimensions.width < 500 ? 
+            
+            <NavBarSm />
+            : 
+            <NavBar />
+            }
+        </>
     )
 }

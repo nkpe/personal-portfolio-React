@@ -44,7 +44,6 @@ export function DesignPortfolio() {
             </div>
 
             <div className="project-row">
-
                 <DesignPortfolioProjects
                     projectImg={standingImg} projectImgAlt="Exhibition Stand Render"
                     projectName="Stand[ing]" projectText="The Brief: to create a unique and innovative way of exhibiting graduate projects at London's Free-Range Exhibition. The final concept was an interactive walk through experience, built so that those viewing the work can get involved with the exhibition. <br /> Visitors can open, peer and look inside the boxes to see the displays, whilst LED strips and spotlights inside the structure create a serene, calming atmosphere ensuring the viewers spend time at each project.

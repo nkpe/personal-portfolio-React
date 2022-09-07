@@ -17,7 +17,6 @@ project-row >
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    height: 500px;
     padding: 10px;
     box-sizing: border-box;
     column-gap: 10px;
@@ -37,6 +36,12 @@ project-row >
 .project-container .project-img img {
     display: block;
     max-width: 100%;
+}
+
+.project-link-list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 750px){
