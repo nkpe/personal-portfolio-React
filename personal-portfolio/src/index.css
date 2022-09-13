@@ -1,0 +1,16 @@
+html {
+  margin: 0;
+  background-color: #7DBECA;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Questrial', sans-serif;
+  height: 100vh;
+  letter-spacing: 2.5px;
+}
+
+body * {
+  color: white;
+}

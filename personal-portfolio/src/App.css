@@ -1,0 +1,28 @@
+
+#App {
+  width: 100%
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1 {
+  font-family: 'PT Serif', serif;
+  font-weight: normal;
+  font-size: 40px;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.vh {
+  min-height: 330px;
+  height: calc(100vh - 90px);
+}
+
+.long-page {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}

@@ -1,0 +1,61 @@
+#bio-page {
+    height: 220vh;
+}
+
+#bio-page .bio-blocks {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+    height: 75vh;
+    width: 85%;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    padding-bottom: 20vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    background-color: white;
+}
+
+#bio-page .bio-blocks *{
+    color: #7DBECA !important;
+}
+
+#bio-page .shadow-left {
+    box-shadow: -10px -10px #7dbeca;
+}
+
+#bio-page .shadow-right {
+    box-shadow: 10px -10px #7dbeca;
+}
+
+#bio-page .bio-blocks h1 {
+    width: 100%;
+}
+
+#bio-page .bio-blocks p {
+    z-index: 10;
+    width: 100%;
+}
+
+#bio-page #about-me {
+    top: 0;
+    float: left;
+}
+
+#bio-page #bio-background {
+    float: right;
+    transform: translateY(-20vh);
+}
+
+#bio-page #bio-present {
+    float: left;
+    transform: translateY(-40vh);
+}
+
+#bio-page #bio-interests {
+    float: right;
+    transform: translateY(-60vh);
+}

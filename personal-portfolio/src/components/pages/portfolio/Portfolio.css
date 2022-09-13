@@ -1,0 +1,54 @@
+/* Heirarchy -
+project-section #project-code 
+project-row > 
+    project-container > 
+        project-link project-img  > img
+        project-text  > h2 
+                    > p  
+                    > project-link-list >  */
+
+.project-section {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.project-row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 10px;
+    box-sizing: border-box;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.project-container {
+    width: calc(50% - 5px);
+}
+
+.project-container .project-img {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.project-container .project-img img {
+    display: block;
+    max-width: 100%;
+}
+
+.project-link-list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 750px){
+    .project-row {
+        height: auto;
+    }
+    .project-container {
+        width: 100%;
+    }
+}
