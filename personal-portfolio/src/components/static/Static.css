@@ -81,6 +81,13 @@ header nav a:hover,
     .nav-spacer {
         display: none;
     }
+
+    #portfolio-dropdown {
+        border: none;
+        box-sizing: border-box;
+        border: 10px #7DBECA solid;
+        left: 0;
+    }
 }
 
 /* Footer */
