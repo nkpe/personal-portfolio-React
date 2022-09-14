@@ -2,11 +2,6 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { Link } from 'react-router-dom';
 // less than 500px - NavBarSm
-function NavBarSm (){
-    return (
-        <div id="nav-sm"><i class="fa-solid fa-ellipsis"></i></div>
-    )
-}
 
 function NavBarDropDown({display, handleCallback}) {
     return (
@@ -17,7 +12,7 @@ function NavBarDropDown({display, handleCallback}) {
     )
 }
 
-function NavBar() {
+function NavBar({handleNavSmCallback}) {
     const [display, setDisplay] = useState("none");
 
     const handleDropdownToggle = () => {
@@ -30,21 +25,37 @@ function NavBar() {
 
     return (
         <nav>
-            <Link to="home">home</Link>
+            <Link to="home"  onClick={handleNavSmCallback}>home</Link>
             <div className="nav-spacer">|</div>
-            <Link to="about">about</Link>
+            <Link to="about"  onClick={handleNavSmCallback}>about</Link>
             <div className="nav-spacer">|</div>
             <div id="projects-link">
                 <div id="nav-projects" onClick={handleDropdownToggle}>projects</div>
                 <NavBarDropDown display={display} handleCallback={handleCallback}/>
             </div>
             <div className="nav-spacer">|</div>
-            <Link to="contact" name="contact-me">contact</Link>
+            <Link to="contact" name="contact-me"  onClick={handleNavSmCallback}>contact</Link>
         </nav>
     )
 }
 
+
+
+function NavBarSm ({navBarShow , handleNavSmCallback , handleNavBarShow}){
+    return (
+        <div id="nav-sm">
+            <i className="fa-solid fa-ellipsis" onClick={handleNavBarShow}></i>
+            <div id="NavBarSmState" style={{display: navBarShow}}>
+                <NavBar handleNavSmCallback={handleNavSmCallback}/>
+            </div>
+        </div>
+    )
+}
+
+
+
 export function ResponsiveNav () {
+    const [navBarShow, setNavBarShow] = useState("none");
     const [dimensions, setDimensions] = useState({
         width: window.innerWidth
     })
@@ -62,12 +73,21 @@ export function ResponsiveNav () {
         }
 
     })
+   
+    let handleNavBarShow = () => {
+        console.log("NavbarSm clicked")
+        navBarShow==="none" ? setNavBarShow("flex") : setNavBarShow("none")
+    };
+
+    let handleNavSmCallback = () => {
+        this.setNavBarShow("none");
+    }
 
     return (
        <>
             {dimensions.width < 500 ? 
             
-            <NavBarSm />
+            <NavBarSm navBarShow={navBarShow} handleNavBarShow={handleNavBarShow} handleNavSmCallback={handleNavSmCallback} />
             : 
             <NavBar />
             }

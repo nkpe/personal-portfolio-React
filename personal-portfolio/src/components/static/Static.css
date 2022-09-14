@@ -29,7 +29,7 @@ header nav {
 
 #portfolio-dropdown {
     display: none;
-    position: absolute; 
+    position: absolute;
     flex-direction: column;
     align-items: center;
     z-index: 99;
@@ -45,12 +45,14 @@ header nav {
     border-top: none;
 }
 
-header nav a , #portfolio-dropdown a {
+header nav a,
+#portfolio-dropdown a {
     display: inline;
     list-style-type: none;
 }
 
-header nav a:hover , #portfolio-dropdown a:hover {
+header nav a:hover,
+#portfolio-dropdown a:hover {
     font-weight: bold;
 }
 
@@ -61,6 +63,31 @@ header nav a:hover , #portfolio-dropdown a:hover {
 
 #nav-sm {
     font-size: 40px;
+}
+
+@media screen and (max-width: 500px) {
+    header nav {
+        flex-direction: column;
+        font-size: 20px;
+        z-index: 100;
+        position: absolute;
+        row-gap: 10px;
+        background-color: #7DBECA;
+        box-sizing: border-box;
+        border: 10px #7DBECA solid;
+        left: 0;
+    }
+
+    .nav-spacer {
+        display: none;
+    }
+
+    #portfolio-dropdown {
+        border: none;
+        box-sizing: border-box;
+        border: 10px #7DBECA solid;
+        left: 0;
+    }
 }
 
 /* Footer */
@@ -77,5 +104,5 @@ footer {
 .social-footer {
     display: inline-flex;
     flex-wrap: nowrap;
-    
+
 }
