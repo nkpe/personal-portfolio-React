@@ -9,7 +9,7 @@ import athenaHack22 from "../../../../images/coding-projects/athena-hack-circula
 function CodingPortfolioProjects ({ projectImg, projectImgAlt, projectName, projectText, projectHostLink, hostLinkType, projectSourceLink }) {
     return (
         <div className="project-container">
-            <a className="project-link project-img" target="_blank" rel="noopener noreferrer">
+            <a className="project-link project-img" target="_blank" rel="noopener noreferrer"  href={projectSourceLink}>
                 <img src={projectImg} alt={projectImgAlt} />
             </a>
             <div className="project-text">
@@ -35,7 +35,7 @@ export function CodingPortfolio () {
                 <CodingPortfolioProjects                    projectImg={dazzlingNailsHome} projectImgAlt="Website for client called Dazzling Nails."
                     projectName="Dazzling Nails" projectText="My client, Dazzling Nails, requires an e-commerce website to sell their press on nails <br />
                    This project is still in development."
-                    projectHostLink="https://dazzlingnails.netlify.app/" hostLinkType="Website" projectSourceLink="#" />
+                    projectHostLink="https://dazzlingnails.netlify.app/" hostLinkType="Website" projectSourceLink="https://github.com/nkpe/Dazzling_Nails" />
 
                 <CodingPortfolioProjects                    projectImg={pairsGame22} projectImgAlt="Pairs Game Website"
                     projectName="Pairs Game" projectText="As part of my web development studies I created a pairs game.

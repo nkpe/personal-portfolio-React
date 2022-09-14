@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import parse from 'html-react-parser';
 import "../Portfolio.css";
 import studioApartmentImg from "../../../../images/design-projects/mini-apartment/living_room1.png";
@@ -10,9 +9,9 @@ import engineeringRecepImg from "../../../../images/design-projects/pailtonengin
 function DesignPortfolioProjects({ projectImg, projectImgAlt, projectName, projectText, projectPage }) {
     return (
         <div className="project-container">
-            <a className="project-link project-img" target="_blank">
+            <div className="project-link project-img">
                 <img src={projectImg} alt={projectImgAlt} />
-            </a>
+            </div>
             <div className="project-text">
                 <h2>{projectName}</h2>
                 <p>{parse(projectText)}</p>

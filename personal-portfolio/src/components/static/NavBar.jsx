@@ -75,7 +75,6 @@ export function ResponsiveNav () {
     })
    
     let handleNavBarShow = () => {
-        console.log("NavbarSm clicked")
         navBarShow==="none" ? setNavBarShow("flex") : setNavBarShow("none")
     };
 
