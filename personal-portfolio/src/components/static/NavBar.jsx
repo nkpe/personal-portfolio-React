@@ -12,7 +12,7 @@ function NavBarDropDown({display, handleCallback}) {
     )
 }
 
-function NavBar() {
+function NavBar({handleNavSmCallback}) {
     const [display, setDisplay] = useState("none");
 
     const handleDropdownToggle = () => {
@@ -25,28 +25,28 @@ function NavBar() {
 
     return (
         <nav>
-            <Link to="home">home</Link>
+            <Link to="home"  onClick={handleNavSmCallback}>home</Link>
             <div className="nav-spacer">|</div>
-            <Link to="about">about</Link>
+            <Link to="about"  onClick={handleNavSmCallback}>about</Link>
             <div className="nav-spacer">|</div>
             <div id="projects-link">
                 <div id="nav-projects" onClick={handleDropdownToggle}>projects</div>
                 <NavBarDropDown display={display} handleCallback={handleCallback}/>
             </div>
             <div className="nav-spacer">|</div>
-            <Link to="contact" name="contact-me">contact</Link>
+            <Link to="contact" name="contact-me"  onClick={handleNavSmCallback}>contact</Link>
         </nav>
     )
 }
 
 
 
-function NavBarSm ({navBarShow , handleCallback , handleNavBarShow}){
+function NavBarSm ({navBarShow , handleNavSmCallback , handleNavBarShow}){
     return (
         <div id="nav-sm">
             <i className="fa-solid fa-ellipsis" onClick={handleNavBarShow}></i>
             <div id="NavBarSmState" style={{display: navBarShow}}>
-                <NavBar handleCallback={handleCallback}/>
+                <NavBar handleNavSmCallback={handleNavSmCallback}/>
             </div>
         </div>
     )
@@ -79,7 +79,7 @@ export function ResponsiveNav () {
         navBarShow==="none" ? setNavBarShow("flex") : setNavBarShow("none")
     };
 
-    let handleCallback = () => {
+    let handleNavSmCallback = () => {
         this.setNavBarShow("none");
     }
 
@@ -87,7 +87,7 @@ export function ResponsiveNav () {
        <>
             {dimensions.width < 500 ? 
             
-            <NavBarSm navBarShow={navBarShow} handleNavBarShow={handleNavBarShow} handleCallback={handleCallback} />
+            <NavBarSm navBarShow={navBarShow} handleNavBarShow={handleNavBarShow} handleNavSmCallback={handleNavSmCallback} />
             : 
             <NavBar />
             }
