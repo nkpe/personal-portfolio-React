@@ -2,11 +2,6 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { Link } from 'react-router-dom';
 // less than 500px - NavBarSm
-function NavBarSm (){
-    return (
-        <div id="nav-sm"><i class="fa-solid fa-ellipsis"></i></div>
-    )
-}
 
 function NavBarDropDown({display, handleCallback}) {
     return (
@@ -44,7 +39,23 @@ function NavBar() {
     )
 }
 
+
+
+function NavBarSm ({navBarShow , handleCallback , handleNavBarShow}){
+    return (
+        <div id="nav-sm">
+            <i className="fa-solid fa-ellipsis" onClick={handleNavBarShow}></i>
+            <div id="NavBarSmState" style={{display: navBarShow}}>
+                <NavBar handleCallback={handleCallback}/>
+            </div>
+        </div>
+    )
+}
+
+
+
 export function ResponsiveNav () {
+    const [navBarShow, setNavBarShow] = useState("none");
     const [dimensions, setDimensions] = useState({
         width: window.innerWidth
     })
@@ -62,12 +73,21 @@ export function ResponsiveNav () {
         }
 
     })
+   
+    let handleNavBarShow = () => {
+        console.log("NavbarSm clicked")
+        navBarShow==="none" ? setNavBarShow("flex") : setNavBarShow("none")
+    };
+
+    let handleCallback = () => {
+        this.setNavBarShow("none");
+    }
 
     return (
        <>
             {dimensions.width < 500 ? 
             
-            <NavBarSm />
+            <NavBarSm navBarShow={navBarShow} handleNavBarShow={handleNavBarShow} handleCallback={handleCallback} />
             : 
             <NavBar />
             }
