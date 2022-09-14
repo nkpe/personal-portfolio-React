@@ -20,8 +20,8 @@ root.render(
           <Route path="home" element={<Home />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="contact" element={<Contact />} />
-          <Route exact path="coding" element={<CodingPortfolio />} />
-          <Route exact path="design" element={<DesignPortfolio />} />
+          <Route path="portfolio/coding" element={<CodingPortfolio />} />
+          <Route path="portfolio/design" element={<DesignPortfolio />} />
           <Route path="" element={<Home />} />
         </Route>
       </Routes>
