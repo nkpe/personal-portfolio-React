@@ -5,7 +5,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 import App from './App';
-import { Home } from '../src/components/pages/home/Home';
+import { Home } from './components/pages/home/Home';
 import { AboutPage } from './components/pages/about/About';
 import { Contact } from './components/pages/contact/Contact';
 import { CodingPortfolio } from './components/pages/portfolio/coding-projects/CodingPortfolio';
