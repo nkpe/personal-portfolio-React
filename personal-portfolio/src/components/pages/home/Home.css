@@ -1,16 +1,26 @@
-#home-pg-main #aside-left {
+#home-pg-main {
     display: flex;
-    align-items: center;
     flex-direction: row;
-    flex-wrap: nowrap;
-    position: absolute;
-    height: inherit;
-    width: 85%;
-    left: 0px;
-    z-index: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-#home-pg-main #aside-left #wel-home-bkgrnd {
+#home-pg-main #aside-left {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 100%;
+    width: 45%;
+    left: 0px;
+    z-index: 1;
+   
+}
+
+/* #home-pg-main #aside-left {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -22,11 +32,10 @@
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-}
+} */
 
-#home-pg-main #aside-left #wel-home-bkgrnd h1 {
-    /* margin: 0; */
-    font-size: 4vw;
+
+#home-pg-main #aside-left h1 {
     animation: 3s slide-in-left;
 }
 
@@ -39,30 +48,27 @@
     }
 }
 
-#home-pg-main #aside-left #img-home-container {
-    height: 100%;
-    width: auto;
+#home-pg-main #img-home-container {
+    display: inline;
+    max-height: 290px;
+    max-width: 290px;
+    border-radius: 200px;
+    overflow: hidden;
 }
 
-#home-pg-main #aside-left #img-home-container img {
-    height: inherit;
-}
-
-#home-pg-main #aside-right {
-    display: block;
-    position: absolute;
-    height: inherit;
-    width: 45%;
-    right: 0px;
-    z-index: 0;
+#home-pg-main #img-home-container img {
+    width: 100%;
 }
 
 @media screen and (max-width: 700px) {
-    #home-pg-main #aside-left #wel-home-bkgrnd {
-        flex-wrap: wrap;
+    #home-pg-main {
+        justify-content: flex-end;
+    }
+    #home-pg-main #aside-left {
         justify-content: flex-end;
         align-content: space-around;
-        height: 65%;
+        height: 50%;
+        width: 100%;
     }
 
     #home-pg-main #aside-left #img-home-container {
@@ -70,7 +76,4 @@
         height: 94%;
     }
 
-    #home-pg-main #aside-left #wel-home-bkgrnd h1{
-        font-size: 2rem;
-    }
 }
