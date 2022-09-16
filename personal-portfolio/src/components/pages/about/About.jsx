@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./About.css";
 
 function AboutSection() {
@@ -12,17 +12,31 @@ function AboutSection() {
     )
 }
 
+function AboutBioLists({ bioListId, listHeading, listItems }) {
+    const bioListItem = listItems.map((item) =>
+        <li>{item}</li>
+    );
+
+    return (
+        <div id={bioListId}>
+            <h2>{listHeading}</h2>
+            <ul listItems={listItems}>
+                {bioListItem}
+            </ul>
+        </div>    
+    )
+}
+
 function AboutBio() {
+
     return (
         <section id="bio-background" className="bio-blocks shadow-left">
             <h1 id="h1-bkgd">skills</h1>
             <p id="p-bkgd">
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Bootstrap</li>
-                    <li>Javascript</li>
-                </ul>
+                <AboutBioLists bioListId="tech-languages" listHeading="Tech Languages" listItems={["HTML5", "CSS3", "Javascript"]} />
+                <AboutBioLists bioListId="frameworks" listHeading="Frameworks & Libraries" listItems={["React", "Vue.js", "Bootstrap"]} />
+                <AboutBioLists bioListId="dev-tools" listHeading="Development Tools" listItems={["VS Code", "Git", "GitHub", "Figma"]} />
+                <AboutBioLists bioListId="design-tools" listHeading="Design Tools" listItems={["Adobe Suite (Illustrator, Photoshop, InDesign)"]} />
             </p>
         </section>
     )

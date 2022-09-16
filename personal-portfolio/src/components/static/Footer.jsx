@@ -9,7 +9,7 @@ export function Footer() {
             </div>
             <div className="social-footer">
                 <SocialMedia />
-                <p id="copyright">&#169; Naomi Pearse 2022</p>
+                <div id="copyright">&#169; Naomi Pearse 2022</div>
             </div>
         </footer>
     )
