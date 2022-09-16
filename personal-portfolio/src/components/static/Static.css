@@ -106,4 +106,10 @@ footer {
     align-items: center ;
     flex-wrap: nowrap;
     height: 100%;
+    text-align: right;
+}
+
+.social-footer #copyright {
+    padding-left: 20px;
+    box-sizing: border-box;
 }
