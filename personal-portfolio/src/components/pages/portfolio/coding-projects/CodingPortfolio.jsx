@@ -47,7 +47,7 @@ export function CodingPortfolio () {
                 <CodingPortfolioProjects                    projectImg={flashQuizHome} projectImgAlt="Climbing Quiz website"
                     projectName="Flash Quiz" projectText="During my studies I made this quiz to practise vanilla Javascript, Bootstrap, CSS3 and HTML5.
                     This project uses Javascript to check the answer selected by the user. When the user selects 'finish', their score is shown as a fraction and percentage at the top of the page."
-                    projectHostLink="https://nkpe.github.io/Climbing-Quiz/" hostLinkType="Website" projectSourceLink="https://github.com/nkpe/Climbing-Quiz" />
+                    projectHostLink="https://nkpe.github.io/Flash-Quiz/" hostLinkType="Website" projectSourceLink="https://github.com/nkpe/Climbing-Quiz" />
 
                 <CodingPortfolioProjects                    projectImg={athenaHack22} projectImgAlt="Website made during Athena Hackathon 2022 "
                     projectName="Circular" projectText="In June 2022 I took part as team in Athena Hackathon to create a website that would allow anyone to be able to access a laptop that was no longer needed
