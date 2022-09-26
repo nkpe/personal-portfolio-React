@@ -93,7 +93,7 @@ header nav a:hover,
 /* Footer */
 footer {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
     height: 90px;
@@ -103,6 +103,13 @@ footer {
 
 .social-footer {
     display: inline-flex;
+    align-items: center ;
     flex-wrap: nowrap;
+    height: 100%;
+    text-align: right;
+}
 
+.social-footer #copyright {
+    padding-left: 20px;
+    box-sizing: border-box;
 }

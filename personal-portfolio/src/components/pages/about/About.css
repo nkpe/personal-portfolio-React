@@ -1,13 +1,11 @@
-#bio-page {
-    height: 220vh;
-}
+
 
 #bio-page .bio-blocks {
     display: flex;
     flex-direction: column;
     align-content: center;
     flex-wrap: nowrap;
-    height: 75vh;
+    min-height: 75vh;
     width: 85%;
     margin: 0;
     text-align: center;
@@ -40,7 +38,7 @@
     width: 100%;
 }
 
-#bio-page #about-me {
+#bio-page #about-me {  
     top: 0;
     float: left;
 }
@@ -48,6 +46,10 @@
 #bio-page #bio-background {
     float: right;
     transform: translateY(-20vh);
+}
+
+#bio-page #bio-background #p-bkgd div ul {
+    list-style-type: none;
 }
 
 #bio-page #bio-present {
