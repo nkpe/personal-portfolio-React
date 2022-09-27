@@ -1,5 +1,5 @@
 # **Personal Portfolio - React Update**
-The purpose of this website is to showcase myself and my work to potential employers and recruiters. The users of this website will be looking at my skills and abilities for potential employment. I have included an about page as an overview of myself and my achievements, along with a portfolio page so users can see examples of my work. A contact page allows any users of the website to get in touch with me.
+The purpose of this website is to showcase myself and my work to poential employers and recruiters. The users of this website will be looking at my skills and abilities for potential employment. I have included an about page as an overview of myself and my achievements, along with a portfolio page so users can see examples of my work. A contact page allows any users of the website to get in touch with me.
 
 This is the third iteration of my portfolio website, which has been created using React, so components do not need to be repeated and the website is easier to maintain.
 As  I have developed my knowledge of web development languages and frameworks, I applied this knowledge to my portfolio website. 
@@ -18,6 +18,9 @@ The about me page split into clearly defined sections, making it easy for the us
 The portfolio page is also split clearly into sections through the use of margins.
 
 GitHub and LinkedIn links are included in footer so its easy to contact me from any page on the website using these channels. I have used the logo for each so they are easily recognised, while keeping the footer simple.
+
+## **Wireframes** 
+Figma used to create wireframes for this website - [View the wireframes on Figma](https://www.figma.com/file/n7K8TVmtU2dfOnCtEBA6PS/Portfolio-Website-2022---blue);
 
 # **Features**
 ## **All Pages**
