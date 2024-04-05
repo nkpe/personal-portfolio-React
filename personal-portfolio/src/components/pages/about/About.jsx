@@ -43,11 +43,11 @@ function BioBlocks({ bioBlockId, bioBlocksClass, bioBlockH1, bioContent }) {
 export function AboutPage() {
     return (
         <section id="bio-page" className="long-page">
-            <BioBlocks bioBlockId="about-me" bioBlocksClass="bio-blocks shadow-right" bioBlockH1="about" bioContent="Full Stack Developer currently working for Daemon constultancy as an Analyst Consultant. Organiser and co-host of the Artifical Intelligence and Deep Learning for entpri 
-                " />
+            <BioBlocks bioBlockId="about-me" bioBlocksClass="bio-blocks shadow-right" bioBlockH1="about" bioContent="Full Stack Developer working for Daemon consultancy as an Analyst Consultant, since March 2023. Organiser and co-host of the Artificial Intelligence and Deep Learning for Enterprise Meetup held in London.  
+
+            Previously had a career in the design industry after graduating with an MDes in Interior Design. " />
             <AboutBio />
-            <BioBlocks bioBlockId="bio-present" bioBlocksClass="bio-blocks shadow-right" bioBlockH1="at present" bioContent="Currently studying Full Stack Web Development having been working in the design
-                industry for 3 and half years." />
+            <BioBlocks bioBlockId="bio-present" bioBlocksClass="bio-blocks shadow-right" bioBlockH1="at present" bioContent="Currently working at Daemon consultancy as an Analyst Consultant." />
             <BioBlocks bioBlockId="bio-interests" bioBlocksClass="bio-blocks shadow-left" bioBlockH1="interests" bioContent="Hobbies include rock climbing, hiking, photography and cross stitching." />
         </section>
     )
