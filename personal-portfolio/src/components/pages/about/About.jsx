@@ -31,20 +31,20 @@ function AboutBio() {
     )
 }
 
-function BioBlocks({bioBlockId, bioBlocksClass, bioBlockH1, bioContent}) {
-            return (
-                <section id={bioBlockId} className={bioBlocksClass}>
-                    <h1>{bioBlockH1}</h1>
-                    <p>{bioContent}</p>
-                </section>
-            )
-    }
+function BioBlocks({ bioBlockId, bioBlocksClass, bioBlockH1, bioContent }) {
+    return (
+        <section id={bioBlockId} className={bioBlocksClass}>
+            <h1>{bioBlockH1}</h1>
+            <p>{bioContent}</p>
+        </section>
+    )
+}
 
 export function AboutPage() {
     return (
         <section id="bio-page" className="long-page">
-            <BioBlocks bioBlockId="about-me" bioBlocksClass="bio-blocks shadow-right" bioBlockH1="about" bioContent="A creative, logical thinker with a passion for stunning web designs and user interfaces.
-                I have a 2:1 in MDes Interior Design from Coventry University." />
+            <BioBlocks bioBlockId="about-me" bioBlocksClass="bio-blocks shadow-right" bioBlockH1="about" bioContent="Full Stack Developer currently working for Daemon constultancy as an Analyst Consultant. Organiser and co-host of the Artifical Intelligence and Deep Learning for entpri 
+                " />
             <AboutBio />
             <BioBlocks bioBlockId="bio-present" bioBlocksClass="bio-blocks shadow-right" bioBlockH1="at present" bioContent="Currently studying Full Stack Web Development having been working in the design
                 industry for 3 and half years." />
